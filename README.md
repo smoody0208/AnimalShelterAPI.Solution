@@ -3,9 +3,10 @@
 ## 🚩 Table of Contents
 
 - [Description](#-description)
-- [Requirements](#-packages)
-- [Setup/Instructions](#-why-toast-ui-editor)
-- [JWT Instructions](#-browser-support)
+- [Requirements](#-requirements)
+- [Setup/Instructions](#-setup)
+- [Postman](#-postman-installation-&-configuration)
+- [JWT Instructions](#-JSON-Web-Token-Instructions)
 - [End Points](#-features)
 - [Examples](#-examples)
 - [Technologies](#-pull-request-steps)
@@ -20,7 +21,7 @@ The Animal Shelter API is built using C#/.NET. Once a user aquires a token they 
 
 <br>
 
-## 📦 Requirements
+## Requirements
 
 | Name | Description |
 | --- | --- |
@@ -32,7 +33,7 @@ The Animal Shelter API is built using C#/.NET. Once a user aquires a token they 
 | Click [here](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql) to get help with SQL 
 <br>
 
-## 🔧 Setup
+## Setup
 1) Create a directory called AnimalShelter.Solution then navigate to it
 ```sh
 $ mkdir AnimalShelter.Solution`
@@ -66,7 +67,7 @@ Postman is a tool which enables people to test calls to APIs. Follow these steps
 1) Download [Postman](https://www.postman.com/downloads/)
 2) Once you open Postman the first thing you will need to do is get your authorization token.
 
-## **JSON Web Token Instructions** (needed for AIP)
+## JSON Web Token Instructions
 1) In Postman enter `http://localhost:5000/users/authenticate` 
 2) Next click the drop down menu and select "POST"
 3) Then select "Body", then "raw" and click the dropdown menue and choose JSON 
