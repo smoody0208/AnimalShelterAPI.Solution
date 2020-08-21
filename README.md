@@ -35,7 +35,7 @@ The Animal Shelter API is built using C#/.NET. Once a user aquires a token they 
 ## 🔧 Setup
 1) Create a directory called AnimalShelter.Solution then navigate to it
 ```sh
-$ mkdir AnimalShelter.Solution
+$ mkdir AnimalShelter.Solution`
 ```
 
 1) Clone this projects GitHub Repository into a local directory 
@@ -49,7 +49,7 @@ $ git clone https://github.com/smoody0208/AnimalShelter.Solution.git
 $ cd AnimalShelter.Solution
 $ code .
 ```
-3) Once the project is open you enter the following into the terminal
+3) Once the project is open you can enter the following into the terminal
 ```sh
 $ dotnet restore
 $ dotnet build
@@ -62,41 +62,22 @@ $ dotnet watch run
 
 ## Postman Installation & Configuration
 Postman is a tool which enables people to test calls to APIs. Follow these steps to get this program up and running.
-i
+
 1) Download [Postman](https://www.postman.com/downloads/)
+2) Once you open Postman the first thing you will need to do is get your authorization token.
 
-#### Run webpack-dev-server
+## **JSON Web Token Instructions** (needed for AIP)
+1) In Postman enter `http://localhost:5000/users/authenticate` 
+2) Next click the drop down menu and select "POST"
+3) Then select "Body", then "raw" and click the dropdown menue and choose JSON 
 
-``` sh
-$ npm run serve
+![UI](https://im.ezgif.com/tmp/ezgif-1-2f29ff62f0df.gif)
 ```
-
-#### Run karma
-
-``` sh
-$ npm run test
+{
+  "username": "Admin"
+  "password": "Admin"
+}
 ```
-
-## **JWT Instructions**
-
-![UI](https://user-images.githubusercontent.com/18183560/84381975-d6c11680-ac24-11ea-9816-9cf2aecbdf06.gif)
-
-* **Toolbar** : Through the toolbar, you can style or add elements to the document you are editing.
-* **Copy and Paste** : Paste anything from browser, screenshot, excel, powerpoint, etc.
-
-## 🎨 End Points
-
-
-## 🐾 Examples
-
-![UI](https://user-images.githubusercontent.com/18183560/84381975-d6c11680-ac24-11ea-9816-9cf2aecbdf06.gif)
-
-## 🌏 Browser Support
-
-| <img src="https://user-images.githubusercontent.com/1215767/34348387-a2e64588-ea4d-11e7-8267-a43365103afe.png" alt="Chrome" width="16px" height="16px" /> Chrome | <img src="https://user-images.githubusercontent.com/1215767/34348590-250b3ca2-ea4f-11e7-9efb-da953359321f.png" alt="IE" width="16px" height="16px" /> Internet Explorer | <img src="https://user-images.githubusercontent.com/1215767/34348380-93e77ae8-ea4d-11e7-8696-9a989ddbbbf5.png" alt="Edge" width="16px" height="16px" /> Edge | <img src="https://user-images.githubusercontent.com/1215767/34348394-a981f892-ea4d-11e7-9156-d128d58386b9.png" alt="Safari" width="16px" height="16px" /> Safari | <img src="https://user-images.githubusercontent.com/1215767/34348383-9e7ed492-ea4d-11e7-910c-03b39d52f496.png" alt="Firefox" width="16px" height="16px" /> Firefox |
-| :---------: | :---------: | :---------: | :---------: | :---------: |
-| Yes | 10+ | Yes | Yes | Yes |
-
 
 ## 🔧 Pull Request Steps
 
