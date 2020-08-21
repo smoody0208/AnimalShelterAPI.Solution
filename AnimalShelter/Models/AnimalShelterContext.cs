@@ -26,6 +26,11 @@ namespace AnimalShelter.Models
         new Shelter { ShelterId = 1, Location = "Four Paws Rescue" },
         new Shelter { ShelterId = 2, Location = "Meowin Rescue" }
       );
+
+      builder.Entity<User>()
+      .HasData(
+        new User { Id = 1, FirstName = "Admin", LastName = "Admin", Username = "Admin", Password = "Admin", Role = Role.Admin } 
+      );
     }
   }
 }  
