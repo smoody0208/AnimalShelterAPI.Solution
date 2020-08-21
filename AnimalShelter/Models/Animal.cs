@@ -1,6 +1,3 @@
-using System;
-using System.ComponentModel.DataAnnotations;
-
 namespace AnimalShelter.Models
 {
   public class Animal
@@ -13,6 +10,6 @@ namespace AnimalShelter.Models
     public string Species { get; set; }
     public string Breed { get; set; }
     public string Description { get; set; }
-    public DateTime DateRescued { get; set; }
+    // public DateTime DateRescued { get; set; }
   }
 }
