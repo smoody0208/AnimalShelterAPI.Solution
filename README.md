@@ -1,4 +1,4 @@
-# <a href="https://ibb.co/VLZ21Rf"><img src="https://i.ibb.co/3TqB32g/Copy-of-Animal-Shelter-API-1.png" alt="Copy-of-Animal-Shelter-API-1" border="0"></a>
+# <img src="https://i.ibb.co/3TqB32g/Copy-of-Animal-Shelter-API-1.png" alt="Copy-of-Animal-Shelter-API-1" border="0"></a>
 
 ## 🚩 Table of Contents
 
