@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace AnimalShelter.Controllers
 {
+  [Authorize(Roles = Role.Admin)]
   [Route("api/[controller]")]
   [ApiController]
   public class SheltersController : ControllerBase
