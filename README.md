@@ -14,9 +14,9 @@
 <br>
 <br>
 
-## 🤖 Why Animal Shelter API?
+## Description
 
-Its the **BEST** and **AWESOME**.
+The Animal Shelter API is built using C#/.NET. Once a user aquires a token they will have the ability to view current animals/shelters, update/add listings, edit specific animals or shelters, and also delete listings.
 
 <br>
 
@@ -29,25 +29,41 @@ Its the **BEST** and **AWESOME**.
 | [MySQL For Windows](https://dev.mysql.com/downloads/file/?id=484919) | [](https://reactjs.org/) Open Source [DataBase](https://www.mysql.com/)  |
 | [Visual Studio Code](https://code.visualstudio.com/) | [](https://reactjs.org/) Source-Code Editor  |
 | [MySQL Workbench](https://www.mysql.com/products/workbench/) | [Tool](https://www.mysql.com/products/workbench/) to Visualize Data  |
-| For help with the installation of MySQL | More information can be found [here](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql)
+| Click [here](https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql) to get help with SQL 
 <br>
 
-### 🔧 Setup
-
-Fork `master` branch into your personal repository. Clone it to local computer. Install node modules. Before starting development, you should check to haveany errors.
-
+## 🔧 Setup
+1) Create a directory called AnimalShelter.Solution then navigate to it
 ```sh
-$ git clone https://github.com/{your-personal-repo}/tui.editor.git
-$ cd [project-name]
-$ npm install
-$ cd [project-name]/apps/editor
-$ npm install
-$ npm run test
+$ mkdir AnimalShelter.Solution
 ```
 
-### Develop
+1) Clone this projects GitHub Repository into a local directory 
 
-You can see your code is reflected as soon as you saving the codes by running a server. Don't miss adding test cases and then make green rights.
+```sh
+$ git clone https://github.com/smoody0208/AnimalShelter.Solution.git
+```
+2) In your terminal enter the following code to navigate to the correct directory and open the project
+
+```sh
+$ cd AnimalShelter.Solution
+$ code .
+```
+3) Once the project is open you enter the following into the terminal
+```sh
+$ dotnet restore
+$ dotnet build
+$ dotnet ef database update
+```
+4) Your application should now be built and have the correct database structure in place to run this application. Next we will run the program with the following code
+```sh
+$ dotnet watch run
+```
+
+## Postman Installation & Configuration
+Postman is a tool which enables people to test calls to APIs. Follow these steps to get this program up and running.
+i
+1) Download [Postman](https://www.postman.com/downloads/)
 
 #### Run webpack-dev-server
 
@@ -86,18 +102,6 @@ $ npm run test
 
 TOAST UI products are open source, so you can create a pull request(PR) after you fix issues. Run npm scripts and develop yourself with the following process.
 
-### 🔧 Setup
-
-Fork `master` branch into your personal repository. Clone it to local computer. Install node modules. Before starting development, you should check to haveany errors.
-
-```sh
-$ git clone https://github.com/{your-personal-repo}/tui.editor.git
-$ cd [project-name]
-$ npm install
-$ cd [project-name]/apps/editor
-$ npm install
-$ npm run test
-```
 
 ### Technologies
 
