@@ -72,18 +72,12 @@ Postman is a tool which enables people to test calls to APIs. Follow these steps
 2) Next click the drop down menu and select "POST"
 3) Then select "Body", then "raw" and click the dropdown menue and choose JSON 
 
-![UI](https://im.ezgif.com/tmp/ezgif-1-2f29ff62f0df.gif)
 ```
 {
   "username": "Admin"
   "password": "Admin"
 }
 ```
-
-## 🔧 Pull Request Steps
-
-TOAST UI products are open source, so you can create a pull request(PR) after you fix issues. Run npm scripts and develop yourself with the following process.
-
 
 ### Technologies
 
