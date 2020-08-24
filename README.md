@@ -24,7 +24,7 @@ The Animal Shelter API is built using C#/.NET. Once a user aquires a token they 
 ## Requirements
 
 | Name | Description |
-| --- | --- |
+| :--- | :--- |
 | [.NET Core 2.2](https://github.com/nhn/tui.editor/tree/master/apps/jquery-editor) | [Framework](https://dotnet.microsoft.com/) used in this project |
 | [MySQL For Mac](https://dev.mysql.com/downloads/file/?id=484914) | [](https://reactjs.org/) Open Source [DataBase](https://www.mysql.com/)  |
 | [MySQL For Windows](https://dev.mysql.com/downloads/file/?id=484919) | [](https://reactjs.org/) Open Source [DataBase](https://www.mysql.com/)  |
@@ -36,7 +36,7 @@ The Animal Shelter API is built using C#/.NET. Once a user aquires a token they 
 ## Setup
 1) Create a directory called AnimalShelter.Solution then navigate to it
 ```sh
-$ mkdir AnimalShelter.Solution`
+$ mkdir AnimalShelter.Solution
 ```
 
 1) Clone this projects GitHub Repository into a local directory 
@@ -79,9 +79,22 @@ Postman is a tool which enables people to test calls to APIs. Follow these steps
 }
 ```
 
-### Technologies
+## Endpoints
+| Endpoint | Method
+| --- | --- |
+| /api/shelters | GET |
+| /api/shelters | POST |
+| /api/shelters/{id} | GET |
+| /api/shelters/{id} | PUT |
+| /api/shelters/{id} | DELETE |
+| /api/animals | GET |
+| /api/animals | POST |
+| /api/animals/{id} | GET |
+| /api/animals/{id} | PUT |
+| /api/animals/{id} | DELETE |
 
-You can see your code is reflected as soon as you saving the codes by running a server. Don't miss adding test cases and then make green rights.
+
+## Technologies
 
 
 ## 📜 License
