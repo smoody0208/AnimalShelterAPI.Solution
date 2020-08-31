@@ -6,11 +6,11 @@
 - [Requirements](#-requirements)
 - [Setup/Instructions](#-setup)
 - [Postman](#-postman-installation-&-configuration)
-- [JWT Instructions](#-JSON-Web-Token-Instructions)
-- [End Points](#-features)
-- [Examples](#-examples)
-- [Technologies](#-pull-request-steps)
-- [Bugs](#-contributing)
+- [JWT Instructions](#-json-web-token-instructions)
+- [End Points](#-Endpoints)
+- [Technologies](#-Technologies)
+- [Bugs](#-Known-Bugs)
+- [Contact](#-contact)
 - [License](#-license)
 <br>
 <br>
@@ -56,6 +56,26 @@ $ dotnet restore
 $ dotnet build
 $ dotnet ef database update
 ```
+4) Next update the appsettings.json file to look like this:
+
+```
+{
+  "AppSettings": {
+    "Secret": "shhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  },
+
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3306;database=spencer_moody;uid=root;pwd=epicodus;"
+  }
+}
+```
+
 4) Your application should now be built and have the correct database structure in place to run this application. Next we will run the program with the following code
 ```sh
 $ dotnet watch run
@@ -67,17 +87,26 @@ Postman is a tool which enables people to test calls to APIs. Follow these steps
 1) Download [Postman](https://www.postman.com/downloads/)
 2) Once you open Postman the first thing you will need to do is get your authorization token.
 
-## JSON Web Token Instructions
+## JSON Web Token Instructions 
+(Needed for all GET/POST requests)
 1) In Postman enter `http://localhost:5000/users/authenticate` 
 2) Next click the drop down menu and select "POST"
-3) Then select "Body", then "raw" and click the dropdown menue and choose JSON 
+3) Then select "Body", then "raw" and click the dropdown menue and choose JSON and enter the following in the Body:
 
 ```
 {
-  "username": "Admin"
+  "username": "Admin",
   "password": "Admin"
 }
 ```
+
+4) Click Send, your login information and Token will be displayed below
+
+5) To use the provided Token for various Post/Get requests, click on the "Authorization" tab, next in the dropdown menue change the authorization type to "Bearer Token".
+
+6) Then enter your token into the provided field.
+
+7) Now you will have complete access to the API.
 
 ## Endpoints
 | Endpoint | Method
@@ -93,8 +122,22 @@ Postman is a tool which enables people to test calls to APIs. Follow these steps
 | /api/animals/{id} | PUT |
 | /api/animals/{id} | DELETE |
 
-
 ## Technologies
 
+* C#
+* .NET Core
+* MVC
+* Git
+* JWT
+* MySQL
 
-## 📜 License
+## Known Bugs
+
+_No known bugs at this time.
+
+## Contact
+
+Contact : [Spencer Moody](spencer.moody@outlook.com)_
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
